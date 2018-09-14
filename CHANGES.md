@@ -1,6 +1,31 @@
 # Release Notes
 
+## 2.6.4
+
+Enhancements / Features
+
+- Support access Redis with password, #2146
+- Support char array for GenericService, #2137
+- Direct return when the server goes down abnormally, #2451
+- Add log for trouble-shooting when qos start failed, #2455
+- PojoUtil support subclasses of java.util.Date, #2499
+- Add ip and application name for MonitorService, #2166
+- New ASCII logo, #2402
+
+Bugfixes
+
+- Change consumer retries default value from 0 to 2, #2303
+- Fix the problem that attachment is lost when retry, #2024
+- Fix NPE when telnet get a null parameter, #2453
+
+UT stability
+
+- Improve the stability by changing different port, setting timeout to 3000ms, #2492 #2490 #2484 #2482 #2462 #2460
+
+Issues and Pull Requests, check [milestone-2.6.4](https://github.com/apache/incubator-dubbo/milestone/19).
+
 ## 2.6.3
+
 Enhancements / Features
 
 - Support implicit delivery of attachments from provider to consumer, #889
